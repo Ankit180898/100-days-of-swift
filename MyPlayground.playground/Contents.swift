@@ -27,10 +27,10 @@ let me:Bool=true
 
 //arrays
 let arr = ["Ankit","Kumar"]
-//set - unordered
+//set - unordered collection
 let colors=Set(["Ankit","kumar","new"])
 let colors1=Set(["Ankit","Ankit","new"])
-//dictoniary
+//dictionary
 let height=[
     "Ankit":1.78,
     "Khushi":1.90
@@ -60,4 +60,147 @@ enum Planet: Int {
     case mars
     case earth
 }
-let planet=Planet(rawValue: 2)
+let planet=Planet(rawValue: 1)
+
+// Arithmetic operators
+// sum
+let a=10
+let b=20
+let c=a+b
+
+//operator overloading
+// combine values with operators
+let first="fakes gonna"
+let second=first + " fake"
+//compoun assignment
+var new = 90
+new -= 5
+
+var quote = "all that ends well"
+quote += " happens well"
+
+//comparison operators
+a == b
+a != b
+a > b
+a <= b
+
+"Ankit" == "New"
+
+// conditions
+//1) if
+let even = 21
+if even % 2 == 0{
+    print("Even")
+}
+    
+else{
+    
+    print("Odd")
+}
+
+//2) &&
+if even % 2 == 0 && even != 0
+{
+    print("Not null and even")
+}
+else if even == 0 || even % 2 != 0{
+    print("null and not even")
+}
+// ternary operator
+
+var ter = even % 2 == 0 ? "Even": "Odd"
+
+//switch case
+
+let weather = "sunny"
+switch weather{
+case "rain":
+    print("Rainy")
+case "windy":
+    print("Windy")
+case "sunny":
+    print("Sunny")
+default:
+    print("enjoy your day")
+}
+
+//range operator
+let scores=90
+switch scores{
+case 0..<50:
+    print("Fail")
+case 50..<80:
+    print("Excellent")
+
+default:
+    print("you did great")
+    
+}
+
+//for loop
+let number = 1...10
+for i in number {
+    print("number is \(i) ")
+}
+
+let course = [ "DSA", "ReactJS", "Java", "C++" ]
+  
+print("Courses are: ")
+
+for i in course{ print("\(i)")}
+
+//while loop
+
+var nu1 = 1
+while nu1 <= 20{
+    print(nu1)
+    nu1 += 1
+    
+}
+// repeat loop (just like do-while)
+var nu2=1
+repeat {
+    print(nu2)
+    nu2 += 1
+} while nu2 <= 20
+
+repeat{
+    print("this is false")
+}while false
+
+//exit in loops
+var countdown=10
+while countdown >= 0{
+    print(countdown)
+    if countdown == 4{
+        print("im boredd lets go")
+        break
+    }
+    countdown -= 1
+}
+
+//nested loop
+for i in 1...10 {
+    for j in 1...10 {
+        let product = i*j
+        print("\(i) * \(j) is \(product)")
+    }
+}
+
+//functions in swift
+
+func printhelper(){
+    let message="""
+Hii yall \n
+"""
+    print(message)
+}
+//call function
+printhelper()
+
+//accepting parameter
+func square(number:Int){
+    print(number*number)
+}
+square(number: 5)
