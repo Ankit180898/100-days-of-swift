@@ -204,3 +204,77 @@ func square(number:Int){
     print(number*number)
 }
 square(number: 5)
+
+//returning value
+func newsquare(number:Int)->Int{
+    return number*number
+}
+let newSquared=newsquare(number: 5)
+print(newSquared)
+
+var j: Int = 10
+
+while j > 0 {
+    j -= 2
+    if j.isMultiple(of: 2) {
+        print("\(j) is an even number.")
+    }
+}
+
+func sayHello(to name: String){
+    print("hello \(name)")
+}
+sayHello(to: "Ankit")
+
+func sayWhat(name: String){
+    print("hello \(name)")
+}
+sayWhat(name: "Ankit")
+
+//omitting parameter labels
+func greet(_ person: String){
+    print(person)
+}
+greet("Ankit")
+//default parameter
+func newGreet(_ person:String, nicely:Bool=true){
+    if nicely == true{
+        print("works")
+    }
+    else{
+        print(person)
+    }
+}
+//two ways of calling
+newGreet("Ankit")
+newGreet("Ankit",nicely: false)
+
+//variadic functions
+func squares(numbers: Int...){
+    for number in numbers{
+        print("\(number*number)")
+    }
+}
+squares(numbers: 1,2,3,4,5)
+
+// throw functions
+enum PasswordError : Error{
+    case obvious
+}
+func checkPassword(_ password:String)
+    throws-> Bool{
+    if password == "password" {
+        throw PasswordError.obvious
+    }
+    else{
+        return true
+    }
+}
+
+do {
+    let result=try checkPassword("password")
+    print("password rating: \(result)")
+}
+catch{
+    print("handle errors")
+}
