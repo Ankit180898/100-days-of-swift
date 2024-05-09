@@ -278,3 +278,59 @@ do {
 catch{
     print("handle errors")
 }
+// inout paramter or variable paramater
+
+func doubleInPlace(number: inout Int){
+    number = number * 2
+}
+var myNum=7
+doubleInPlace(number: &myNum)
+print(myNum)
+
+func paintHouse(color: String) -> Bool {
+    if color == "tartan" {
+        return false
+    }
+    return true
+}
+paintHouse(color: "tartan")
+
+//closures
+let driving={
+    print("wassup")
+}
+driving()
+//accepting parameters in closures
+let newDriving={
+    (place:String) in print("im driving to \(place)")
+}
+newDriving("Dumka")
+
+//returning values in closure
+let drivingReturn = {
+    (place:String) -> String in
+    return "im driving to \(place)"
+}
+//drivingReturn("London")
+
+//closure as parameter
+func letsGo(action:(String)->String){
+    print("im getting ready")
+  action("blah")
+    print("i have arrived")
+}
+letsGo(action: drivingReturn)
+
+// trailing closure syntax
+// we can pass closure directly to the function
+
+func newSomething(action:(String)->Void){
+    print("hello")
+    action("blah")
+    print("hii")
+}
+newSomething{
+    (place:String) in
+    print("yes \(place)")
+}
+
