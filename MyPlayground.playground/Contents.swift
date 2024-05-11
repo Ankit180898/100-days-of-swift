@@ -334,3 +334,77 @@ newSomething{
     print("yes \(place)")
 }
 
+//shorthand closure format with multiple parameters
+func travelnew(newArea:(String,Int)->String){
+    print("hello")
+    let desc=newArea("London",60)
+}
+travelnew {
+    "im going to \($0) at \($1)"
+}
+// closure examples
+struct Student{
+    let name: String
+    var testScore:Int
+}
+let students=[
+Student(name: "Ankit", testScore: 80),
+Student(name: "Khushi", testScore: 90),
+Student(name: "Alok", testScore: 75),
+Student(name: "Amit", testScore: 89),
+Student(name: "Papa", testScore: 65),
+Student(name: "Mummy", testScore: 50)
+]
+//using closure
+var topStudentFilter:(Student)->Bool={
+    Student in
+    return Student.testScore > 80
+}
+//using func
+func topStudentFilterF(student:Student)->Bool{
+    return student.testScore>70
+}
+
+let topStudents=students.filter{$0.testScore>70}
+for i in topStudents {
+    print(i.name)
+}
+
+//Structs
+
+struct Table{
+    var legs: Int
+}
+
+var ikeaTable=Table(legs: 4)
+print(ikeaTable.legs)
+
+
+//computed properties
+
+struct Sports{
+    var name:String
+    var isOlympics:Bool
+    var olympicStatus:String{
+        if isOlympics{
+            return "\(name) is an olympic sport"
+        }else{
+            return "not olympic sport"
+        }
+    }
+}
+let chessboxing=Sports(name: "Football", isOlympics: false)
+print(chessboxing.olympicStatus)
+
+//property observer
+struct Progress{
+    var task:String
+    var amount:Int{
+        didSet{
+            print("\(task) is \(amount) completed")
+        }
+    }
+}
+var progress=Progress.init(task: "laoding data...", amount: 40)
+progress.amount=50
+progress.amount=90
