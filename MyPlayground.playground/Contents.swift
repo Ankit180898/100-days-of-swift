@@ -408,3 +408,53 @@ struct Progress{
 var progress=Progress.init(task: "laoding data...", amount: 40)
 progress.amount=50
 progress.amount=90
+
+//Methods
+//structs can have functions inside of them
+
+struct City{
+    var population:Int
+    func collectTaxes()->Int{
+        return population*1000
+    }
+    
+}
+var populations=City(population: 90)
+print(populations.collectTaxes())
+//mutating function
+//by default struct is constant
+struct Name{
+    var name:String
+    mutating func rename(){
+        name="Ankit"
+    }
+}
+var e=Name(name: "new")
+e.rename()
+print(e.name)
+
+//properties & methods of strings
+var something="Ankit is happy"
+print(something.count)
+print(something.lowercased())
+print(something.uppercased())
+print(something.hasPrefix("Do"))
+print(something.sorted())
+//properties and methods of arrays
+
+var toys=["Woody"]
+toys.append("Buzz")
+toys.firstIndex(of: "Buzz")
+print(toys.sorted())
+print(toys.remove(at: 0))
+toys
+
+// initializers
+struct User{
+    var name:String
+    init() {
+        name = "anonymous"
+    }
+}
+var user=User()
+user.name="Ankit"
