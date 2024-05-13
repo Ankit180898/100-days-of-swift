@@ -458,3 +458,34 @@ struct User{
 }
 var user=User()
 user.name="Ankit"
+
+
+//static properties and methods
+
+struct Students{
+    static var classSize=0
+    var name:String
+    init(name: String) {
+        self.name = name
+        Students.classSize += 1
+    }
+}
+let ed=Students(name: "Ankit")
+let n=Students(name:"Khushi")
+
+print(Students.classSize)
+
+
+//access control
+struct Person{
+    private var id:String
+    init(id: String) {
+        self.id = id
+    }
+    func identify()->String{
+        return "My identity is \(id)"
+    }
+}
+var khushi=Person(id: "1234")
+
+print(khushi.identify())
