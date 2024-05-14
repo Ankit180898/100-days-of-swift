@@ -489,3 +489,119 @@ struct Person{
 var khushi=Person(id: "1234")
 
 print(khushi.identify())
+
+//class
+//doesnt have memberwise initialise so we create one using init()
+class Ankit{
+    var name:String
+    var profession:String
+    init(name: String, profession: String) {
+        self.name = name
+        self.profession = profession
+    }
+    
+}
+
+let kh=Ankit(name: "Ankit", profession: "coder")
+kh.name="Ankit"
+
+//structs by default have memeberwise initialisers
+struct Hello{
+    var name:String
+}
+let someone=Hello(name: "khushii")
+
+
+// inheritance
+//parent class
+class Dog{
+    var name:String
+    var breed:String
+
+    
+    init(name: String, breed: String) {
+        self.name = name
+        self.breed = breed
+    }
+    
+}
+//child class
+class Poodle:Dog{
+      init(name: String) {
+         super.init(name: name, breed: "poodle")
+    }
+}
+
+class Doggy:Poodle{
+    //override the
+    override init(name: String) {
+         super.init(name: "Doggy")
+    }
+}
+let poodle=Dog(name: "Sam",breed: "poodle")
+let doggy=Doggy(name: "german")
+print(doggy.name
+)
+//override methods
+class NewDog{
+    func makeSomeNoise(){
+        print("Woof!")
+    }
+}
+//child class
+class German:NewDog{
+    //overriding the makesomenoise method
+    override func makeSomeNoise() {
+        print("im scary")
+    }
+}
+
+let shephard=German()
+shephard.makeSomeNoise()
+
+//final class
+//other classes can inherit this class we use FINAL keyword
+ final class SomeDog{
+    var name:String
+    var breed:String
+    init(name: String, breed: String) {
+        self.name = name
+        self.breed = breed
+    }
+}
+    //then we cant override as it gives error
+//class Fluffy:SomeDog{
+//     init(name: String) {
+//         super.init(name: name, breed: "somedog")
+//    }
+//}
+
+//deinit()
+
+class Boy{
+    var name="Ankit"
+    
+    init() {
+        print("\(name) is alive")
+    }
+    func printGreeting(){
+        print("Hello \(name)")
+    }
+    deinit{
+        print("\(name) is not alive")
+    }
+}
+for i in 1...3{
+    let p=Boy()
+    p.printGreeting()
+}
+
+//mutability
+
+class Singers{
+    var name="Taylore Swift"
+    
+}
+let taylors=Singers()
+taylors.name="Ankit"
+print(taylors.name)
