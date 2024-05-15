@@ -605,3 +605,119 @@ class Singers{
 let taylors=Singers()
 taylors.name="Ankit"
 print(taylors.name)
+
+
+//protocols (kinda like abstract classes)
+
+protocol Vehicle{
+    func estimatedTime(distance:Int)->Int
+    func travel(distance:Int)
+}
+
+struct Bicycle:Vehicle{
+    func estimatedTime(distance: Int) -> Int {
+        return distance/50;
+    }
+    func travel(distance: Int) {
+        print("im travelled \(distance) kms")
+    }
+}
+func commute(distance:Int, vehicle:Vehicle){
+    print(vehicle.estimatedTime(distance: distance))
+}
+let bicycle=Bicycle()
+commute(distance: 100, vehicle: bicycle)
+
+// protocols inheritance
+
+protocol Payable{
+    func calculateWages()->Int
+    
+}
+protocol NeedsTraining{
+    func study()
+    
+}
+
+protocol NeedsVacation{
+    func takeVacation(days:Int)
+    
+}
+protocol Employee:Payable,NeedsTraining,NeedsVacation{
+    
+}
+//using it in struct
+struct AddEmployee:Employee{
+    func study() {
+        print("needs studying")
+    }
+    
+    func takeVacation(days: Int) {
+       print("Take \(days) vacation")
+    }
+    
+    func calculateWages() -> Int {
+        return 1000
+    }
+}
+
+let hi=AddEmployee()
+print(hi.study())
+
+//extension method
+
+extension Int{
+    func squared()->Int{
+        return self * self
+    }
+}
+
+let nums=9
+
+nums.squared()
+
+extension Int{
+    var isEven:Bool{
+        return self % 2==0
+    }
+}
+
+var val=10
+val.isEven
+
+//protocol extension
+let pythons=["Ankit","Khushi","Khushi"]
+
+let beatles=Set(["Khushi","Ankit"])
+
+extension Collection{
+    func summarize(){
+        print("these are \(count) of us")
+        for name in self{
+            print(name)
+        }
+    }
+}
+
+pythons.summarize()
+beatles.summarize()
+
+
+//protocol oriented programming
+
+protocol Identifiable{
+    var id:String {get set}
+    func identify()
+}
+
+extension Identifiable{
+    func identify(){
+        print("My id is \(id)")
+    }
+}
+struct Users:Identifiable{
+    var id:String
+}
+
+let users=Users(id: "twostraws")
+users.identify()
