@@ -721,3 +721,61 @@ struct Users:Identifiable{
 
 let users=Users(id: "twostraws")
 users.identify()
+
+
+//optionals
+//kinda like nullable in dart
+//? after type
+
+var dogg:String?=nil
+
+dogg="49"
+
+var snoppy:String?=nil
+snoppy="Khushii"
+if let unwrapped = snoppy {
+    print("\(unwrapped.count) letters")
+}
+else{
+    print("Missing name")
+}
+
+//force unwrapping
+
+let str:String!="5"
+
+let ab = Int(str)
+
+//nil coalecing
+
+func newName(for id:Int)->String?{
+    if id==1{
+        return "Taylor"
+    }
+    else{
+        return nil
+    }
+}
+
+let newId=newName(for: 5) ?? "Anonymous"
+
+//typecasting
+
+class Animals{}
+
+class Doggo:Animals{}
+
+class AnotherAnimal:Animals{
+    func makeSomeNoise(){
+        print("woof!")
+    }
+    
+}
+
+let pets=[Doggo(),AnotherAnimal(),Doggo(),AnotherAnimal()]
+
+for i in pets{
+    if let dogg=i as? AnotherAnimal{
+        dogg.makeSomeNoise()
+    }
+}
