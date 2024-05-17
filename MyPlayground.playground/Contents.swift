@@ -779,3 +779,21 @@ for i in pets{
         dogg.makeSomeNoise()
     }
 }
+
+//two sum
+var listVal=[8, 10, 2, 9, 7, 5]
+let sums:Int=11
+var l:Int=0
+var r:Int=listVal.count-1
+
+while(l<r){
+    if(listVal[l]+listVal[r]==sums){
+        print("found it")
+    }
+    else if(listVal[l]+listVal[r]>sums){
+        r=r-1
+    }
+    else{
+        l=l+1
+    }
+}
