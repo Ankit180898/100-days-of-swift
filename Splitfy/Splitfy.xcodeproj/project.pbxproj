@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFEE404F2BF66A860089C8DD /* SplitfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE404E2BF66A860089C8DD /* SplitfyApp.swift */; };
+		EFEE40512BF66A860089C8DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE40502BF66A860089C8DD /* ContentView.swift */; };
+		EFEE40532BF66A880089C8DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEE40522BF66A880089C8DD /* Assets.xcassets */; };
+		EFEE40562BF66A880089C8DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEE40552BF66A880089C8DD /* Preview Assets.xcassets */; };
+		EFEE40602BF66A880089C8DD /* SplitfyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE405F2BF66A880089C8DD /* SplitfyTests.swift */; };
+		EFEE406A2BF66A880089C8DD /* SplitfyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE40692BF66A880089C8DD /* SplitfyUITests.swift */; };
+		EFEE406C2BF66A880089C8DD /* SplitfyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEE406B2BF66A880089C8DD /* SplitfyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFEE405C2BF66A880089C8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFEE40432BF66A860089C8DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFEE404A2BF66A860089C8DD;
+			remoteInfo = Splitfy;
+		};
+		EFEE40662BF66A880089C8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFEE40432BF66A860089C8DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFEE404A2BF66A860089C8DD;
+			remoteInfo = Splitfy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFEE404B2BF66A860089C8DD /* Splitfy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEE404E2BF66A860089C8DD /* SplitfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitfyApp.swift; sourceTree = "<group>"; };
+		EFEE40502BF66A860089C8DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EFEE40522BF66A880089C8DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFEE40552BF66A880089C8DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EFEE405B2BF66A880089C8DD /* SplitfyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEE405F2BF66A880089C8DD /* SplitfyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitfyTests.swift; sourceTree = "<group>"; };
+		EFEE40652BF66A880089C8DD /* SplitfyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitfyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEE40692BF66A880089C8DD /* SplitfyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitfyUITests.swift; sourceTree = "<group>"; };
+		EFEE406B2BF66A880089C8DD /* SplitfyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitfyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFEE40482BF66A860089C8DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE40582BF66A880089C8DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE40622BF66A880089C8DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFEE40422BF66A860089C8DD = {
+			isa = PBXGroup;
+			children = (
+				EFEE404D2BF66A860089C8DD /* Splitfy */,
+				EFEE405E2BF66A880089C8DD /* SplitfyTests */,
+				EFEE40682BF66A880089C8DD /* SplitfyUITests */,
+				EFEE404C2BF66A860089C8DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFEE404C2BF66A860089C8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE404B2BF66A860089C8DD /* Splitfy.app */,
+				EFEE405B2BF66A880089C8DD /* SplitfyTests.xctest */,
+				EFEE40652BF66A880089C8DD /* SplitfyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFEE404D2BF66A860089C8DD /* Splitfy */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE404E2BF66A860089C8DD /* SplitfyApp.swift */,
+				EFEE40502BF66A860089C8DD /* ContentView.swift */,
+				EFEE40522BF66A880089C8DD /* Assets.xcassets */,
+				EFEE40542BF66A880089C8DD /* Preview Content */,
+			);
+			path = Splitfy;
+			sourceTree = "<group>";
+		};
+		EFEE40542BF66A880089C8DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE40552BF66A880089C8DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFEE405E2BF66A880089C8DD /* SplitfyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE405F2BF66A880089C8DD /* SplitfyTests.swift */,
+			);
+			path = SplitfyTests;
+			sourceTree = "<group>";
+		};
+		EFEE40682BF66A880089C8DD /* SplitfyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFEE40692BF66A880089C8DD /* SplitfyUITests.swift */,
+				EFEE406B2BF66A880089C8DD /* SplitfyUITestsLaunchTests.swift */,
+			);
+			path = SplitfyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFEE404A2BF66A860089C8DD /* Splitfy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEE406F2BF66A880089C8DD /* Build configuration list for PBXNativeTarget "Splitfy" */;
+			buildPhases = (
+				EFEE40472BF66A860089C8DD /* Sources */,
+				EFEE40482BF66A860089C8DD /* Frameworks */,
+				EFEE40492BF66A860089C8DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Splitfy;
+			productName = Splitfy;
+			productReference = EFEE404B2BF66A860089C8DD /* Splitfy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFEE405A2BF66A880089C8DD /* SplitfyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEE40722BF66A880089C8DD /* Build configuration list for PBXNativeTarget "SplitfyTests" */;
+			buildPhases = (
+				EFEE40572BF66A880089C8DD /* Sources */,
+				EFEE40582BF66A880089C8DD /* Frameworks */,
+				EFEE40592BF66A880089C8DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFEE405D2BF66A880089C8DD /* PBXTargetDependency */,
+			);
+			name = SplitfyTests;
+			productName = SplitfyTests;
+			productReference = EFEE405B2BF66A880089C8DD /* SplitfyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFEE40642BF66A880089C8DD /* SplitfyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEE40752BF66A880089C8DD /* Build configuration list for PBXNativeTarget "SplitfyUITests" */;
+			buildPhases = (
+				EFEE40612BF66A880089C8DD /* Sources */,
+				EFEE40622BF66A880089C8DD /* Frameworks */,
+				EFEE40632BF66A880089C8DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFEE40672BF66A880089C8DD /* PBXTargetDependency */,
+			);
+			name = SplitfyUITests;
+			productName = SplitfyUITests;
+			productReference = EFEE40652BF66A880089C8DD /* SplitfyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFEE40432BF66A860089C8DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EFEE404A2BF66A860089C8DD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EFEE405A2BF66A880089C8DD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EFEE404A2BF66A860089C8DD;
+					};
+					EFEE40642BF66A880089C8DD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = EFEE404A2BF66A860089C8DD;
+					};
+				};
+			};
+			buildConfigurationList = EFEE40462BF66A860089C8DD /* Build configuration list for PBXProject "Splitfy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFEE40422BF66A860089C8DD;
+			productRefGroup = EFEE404C2BF66A860089C8DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFEE404A2BF66A860089C8DD /* Splitfy */,
+				EFEE405A2BF66A880089C8DD /* SplitfyTests */,
+				EFEE40642BF66A880089C8DD /* SplitfyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFEE40492BF66A860089C8DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEE40562BF66A880089C8DD /* Preview Assets.xcassets in Resources */,
+				EFEE40532BF66A880089C8DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE40592BF66A880089C8DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE40632BF66A880089C8DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFEE40472BF66A860089C8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEE40512BF66A860089C8DD /* ContentView.swift in Sources */,
+				EFEE404F2BF66A860089C8DD /* SplitfyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE40572BF66A880089C8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEE40602BF66A880089C8DD /* SplitfyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEE40612BF66A880089C8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFEE406C2BF66A880089C8DD /* SplitfyUITestsLaunchTests.swift in Sources */,
+				EFEE406A2BF66A880089C8DD /* SplitfyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFEE405D2BF66A880089C8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFEE404A2BF66A860089C8DD /* Splitfy */;
+			targetProxy = EFEE405C2BF66A880089C8DD /* PBXContainerItemProxy */;
+		};
+		EFEE40672BF66A880089C8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFEE404A2BF66A860089C8DD /* Splitfy */;
+			targetProxy = EFEE40662BF66A880089C8DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EFEE406D2BF66A880089C8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFEE406E2BF66A880089C8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFEE40702BF66A880089C8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Splitfy/Preview Content\"";
+				DEVELOPMENT_TEAM = DH8XMG6683;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitkumar.Splitfy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFEE40712BF66A880089C8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Splitfy/Preview Content\"";
+				DEVELOPMENT_TEAM = DH8XMG6683;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitkumar.Splitfy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFEE40732BF66A880089C8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DH8XMG6683;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitkumar.SplitfyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splitfy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Splitfy";
+			};
+			name = Debug;
+		};
+		EFEE40742BF66A880089C8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DH8XMG6683;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitkumar.SplitfyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Splitfy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Splitfy";
+			};
+			name = Release;
+		};
+		EFEE40762BF66A880089C8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DH8XMG6683;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitkumar.SplitfyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Splitfy;
+			};
+			name = Debug;
+		};
+		EFEE40772BF66A880089C8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DH8XMG6683;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitkumar.SplitfyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Splitfy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFEE40462BF66A860089C8DD /* Build configuration list for PBXProject "Splitfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEE406D2BF66A880089C8DD /* Debug */,
+				EFEE406E2BF66A880089C8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEE406F2BF66A880089C8DD /* Build configuration list for PBXNativeTarget "Splitfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEE40702BF66A880089C8DD /* Debug */,
+				EFEE40712BF66A880089C8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEE40722BF66A880089C8DD /* Build configuration list for PBXNativeTarget "SplitfyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEE40732BF66A880089C8DD /* Debug */,
+				EFEE40742BF66A880089C8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEE40752BF66A880089C8DD /* Build configuration list for PBXNativeTarget "SplitfyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEE40762BF66A880089C8DD /* Debug */,
+				EFEE40772BF66A880089C8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFEE40432BF66A860089C8DD /* Project object */;
+}
