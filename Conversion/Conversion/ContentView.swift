@@ -17,21 +17,20 @@ struct ContentView: View {
 
         return inputMeasurement.converted(to: outputUnit)
     }
-    var input: some View {
-        Section("Input unit"){
-            Picker(
-                "Input length unit",selection: $inputUnit){
-                    ForEach(unitsList,id: \.self){Unit in
-                        Text("\(Unit.symbol)")
-                    }
-                    
-                    
-                }.pickerStyle(.segmented)
-        }
-    }
+    
     var body: some View {
         NavigationStack{
             Form{
+                Section("Input unit"){
+                    Picker(
+                        "Input length unit",selection: $inputUnit){
+                            ForEach(unitsList,id: \.self){Unit in
+                                Text("\(Unit.symbol)")
+                            }
+                            
+                            
+                        }.pickerStyle(.segmented)
+                }
                 
                 Section("Output unit"){
                     Picker(
@@ -45,7 +44,7 @@ struct ContentView: View {
                         }.pickerStyle(.segmented)
                 }
                 
-                Section(""){
+                Section("Enter your number"){
                     TextField("Enter number", value: $inputNumber,format:.number  ).keyboardType(.numberPad)
                     
                 }
@@ -56,6 +55,7 @@ struct ContentView: View {
             }.navigationTitle("Conversion")
         }
     }
+    
 }
 
 #Preview {
