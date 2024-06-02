@@ -1,5 +1,18 @@
 import SwiftUI
 
+//view composition i.e created another smaller view
+struct DisplayText : View{
+    var text:String
+    var font:Font
+    var foregroundColor:Color?
+    var body: some View{
+        Text(text)
+            .font(font)
+            .foregroundColor(foregroundColor ?? .primary)
+        
+    }
+}
+
 struct HomeView: View {
     @State private var scoreTitle = ""
     @State private var showingScore = false
@@ -7,6 +20,7 @@ struct HomeView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
 
+    
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -18,19 +32,14 @@ struct HomeView: View {
 
                 VStack {
                     Spacer()
-
-                    Text("Guess the Flag")
-                        .font(.largeTitle.bold())
-                        .foregroundStyle(.white)
+                    DisplayText(text: "Guess the Flag", font: .largeTitle.bold(), foregroundColor: .white)
+        
 
                     VStack(spacing: 15) {
                         VStack {
-                            Text("Tap the flag of")
-                                .foregroundStyle(.secondary)
-                                .font(.subheadline.weight(.heavy))
-
-                            Text(countries[correctAnswer])
-                                .font(.largeTitle.weight(.semibold))
+                            DisplayText(text: "Tap the flag of", font: .subheadline.weight(.heavy), foregroundColor: .secondary)
+                            DisplayText(text: countries[correctAnswer], font: .largeTitle.weight(.semibold))
+            
                         }
 
                         ForEach(0..<3) { number in
@@ -38,8 +47,6 @@ struct HomeView: View {
                                 showTapped(number)
                             } label: {
                                 Image(countries[number])
-                                    .resizable()
-                                    .scaledToFit()
                                     .frame(width: geo.size.width * 0.5, height: geo.size.height * 0.15)
                                     .clipShape(Capsule())
                                     .shadow(radius: 5)
@@ -53,10 +60,8 @@ struct HomeView: View {
 
                     Spacer()
                     Spacer()
-
-                    Text("Score: \(score)")
-                        .foregroundStyle(.white)
-                        .font(.title.bold())
+                    DisplayText(text: "Score: \(score)", font: .title.bold(),foregroundColor: .white)
+        
 
                     Spacer()
                 }
