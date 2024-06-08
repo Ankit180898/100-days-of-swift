@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var moves : [Move?] = Array(repeating: nil, count: 9)
-    @State private var isHuman=false;
+
     let columns: [GridItem]=[GridItem(.flexible()),GridItem(.flexible()),GridItem(.flexible())]
     var body: some View {
         GeometryReader{
@@ -33,9 +33,16 @@ struct ContentView: View {
                                 
                             }
                             .onTapGesture {
-                                moves[number]=Move(player: isHuman ? .human : .computer, boardIndex: number)
-                                //computer's turn
-                                isHuman.toggle()
+                                if isSquareOccupied(in: moves, for: number){
+                                    return
+                                }
+                                moves[number]=Move(player: .human, boardIndex: number)
+                                
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ){
+                                    let computerPosition=determineComputerPosition(in: moves)
+                                    moves[computerPosition]=Move(player: .computer, boardIndex: computerPosition)
+                                }
+            
                                 
                             }
                         }
@@ -51,8 +58,20 @@ struct ContentView: View {
         }
         .background(.indigo.opacity(0.2))
         
-        
+       
     }
+    func isSquareOccupied(in moves:[Move?],for index:Int)->Bool{
+        return moves.contains(where: {$0?.boardIndex==index})
+    }
+    
+    func determineComputerPosition(in moves: [Move?])->Int{
+        var movePosition=Int.random(in: 0..<9)
+        while isSquareOccupied(in: moves, for: movePosition){
+            movePosition=Int.random(in: 0..<9)
+        }
+        return movePosition
+    }
+    
 }
 
 enum Player{
